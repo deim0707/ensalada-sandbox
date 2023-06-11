@@ -1,6 +1,6 @@
 import {HistoryOutlined, ScheduleOutlined, UnorderedListOutlined} from '@ant-design/icons';
 import {Menu} from 'antd';
-import {useLocation, NavLink} from "react-router-dom";
+import {NavLink, useLocation} from "react-router-dom";
 import {ROUTES} from "../constants/routes";
 
 const items = [
@@ -20,10 +20,10 @@ const items = [
         icon: <HistoryOutlined/>,
     },
 ];
-const Header = () => {
+const NavMenu = () => {
     let {pathname} = useLocation();
     const currentTab = pathname.slice(1);
 
     return <Menu selectedKeys={[currentTab]} mode="horizontal" items={items}/>;
 };
-export {Header};
+export {NavMenu};

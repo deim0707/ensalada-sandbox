@@ -1,4 +1,5 @@
-import { Divider, List, Typography } from 'antd';
+import {List} from 'antd';
+
 const data = [
     'Racing car sprays burning fuel into crowd.',
     'Japanese princess to wed commoner.',
@@ -8,7 +9,7 @@ const data = [
 ];
 const ListEvents = () => (
     <>
-        <Divider orientation="left">Мероприятия на которые ты зарегистрирован</Divider>
+        <h2>Мероприятия на которые ты зарегистрирован</h2>
         <List
             bordered
             dataSource={data}
